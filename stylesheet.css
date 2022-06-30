@@ -1,0 +1,204 @@
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+/* .nav-item:hover{
+    color: blue;
+} */
+
+.dropdown{
+    border: none;
+}
+
+.feature-drop-img{
+    margin-right: 10pt;
+}
+
+.btn-login{
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-register{
+    padding: 5pt 15pt;
+    background-color: #fff;
+    border-radius: 10pt;
+    margin-right: 20pt;
+    margin-left: 30pt;
+}
+
+.body{
+    display: flex;
+}
+
+/* .text{
+    margin-left: 10pt;
+} */
+
+.remote{
+    font-size: 50pt;
+    font-weight: 700;
+    /* margin-left: 15%; */
+    line-height: 70px;
+    padding-top: 18%;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+}
+
+.team{
+    /* margin-left: 15%; */
+    padding-right: 32%;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 3rem;
+
+}
+
+.learn{
+    padding: 8pt 17pt;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6pt;
+    margin-bottom: 3rem;
+}
+
+.learn:hover{
+    background-color: #fff;
+    color: #000;
+    outline: #000 1px solid;
+    /* border: #000 1pt solid; */
+}
+
+.logos{
+    padding-top: 5%;
+}
+
+.edit{
+    margin-left: 20pt;
+}
+
+.learn, .team, .remote, .logos{
+    margin-left: 20%;
+}
+
+.hero-img{
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (max-width: 480px) {
+
+    .body{
+        flex-direction: column-reverse;
+    }
+
+    .btn-login{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-left: 38%;
+        /* text-align: end; */
+    }
+
+    .btn-register{
+        margin-top: 1rem;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hero-img{
+        /* mask-image: url(./images/image-hero-mobile.png); */
+        /* height: 50%; */
+        /* src: url(./images/image-hero-mobile.png); */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .remote{
+        font-size: 25pt;
+        /* font-size: 50pt; */
+        font-weight: 700;
+        /* margin-left: 15%; */
+        /* line-height: 70px; */
+        padding-top: 5%;
+        letter-spacing: 0px;
+        margin-bottom: 0rem;
+    }
+
+    .team{
+        /* margin-left: 15%; */
+        padding-right: 5%;
+        color: hsl(0, 0%, 41%);
+        margin-bottom: 1.5rem;
+    }
+    
+    .learn{
+        margin-bottom: 0rem;
+        margin-left: 33%;
+        text-align: center;
+        /* align-content: center; */
+    }
+
+     .team, .remote{
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .logos{
+        /* max-width: 100%; */
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .edit{
+        margin-left: 0;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 50px; /* adjust to height of navbar */
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 60%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .navbar-collapse.collapsing {
+        right: -60%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: right 500ms ease-in-out;
+    }
+}
+
+
+
+/* 480px
+767
+992
+1024
+1280 */
